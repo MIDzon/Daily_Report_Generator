@@ -1,0 +1,4 @@
+Rep rela res {month} {start_day} to csv Relabel{RR}_{date_num}
+Rep rela res {month} {start_day} tour 1 to csv Relabel{RR}_T1_{date_num}
+Rep rela res {month} {start_day} tour 2 to csv Relabel{RR}_T2_{date_num}
+Rep rela res {month} {start_day} tour 3 to csv Relabel{RR}_T3_{date_num}
