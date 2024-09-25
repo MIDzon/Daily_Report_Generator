@@ -1,0 +1,19 @@
+rep vol long {month} {start_day} tour 3 to csv {strand}_vol_T3_{month}-{start_day}
+rep vol long {month} {start_day} tour 1 to csv {strand}_vol_T1_{month}-{start_day}
+rep vol long {month} {start_day} tour 2 to csv {strand}_vol_T2_{month}-{start_day}
+rep vol rej {month} {start_day} tour 1 to csv {strand}_reject_T1_{month}-{start_day}
+rep vol rej {month} {start_day} tour 2 to csv {strand}_reject_T2_{month}-{start_day}
+rep vol rej {month} {start_day} tour 3 to csv {strand}_reject_T3_{month}-{start_day}
+rep mail {month} {start_day} 2024 tour 1 to fil {strand}_Mail_Report_T1_{month}-{start_day}
+rep mail {month} {start_day} 2024 tour 2 to fil {strand}_Mail_Report_T2_{month}-{start_day}
+rep mail {month} {start_day} 2024 tour 3 to fil {strand}_Mail_Report_T3_{month}-{start_day}
+Report volume induction {month} {start_day} 2024 tour 1 to csv {strand}_IV_T1_{month}-{start_day}
+Report volume induction {month} {start_day} 2024 tour 2 to csv {strand}_IV_T2_{month}-{start_day}
+Report volume induction {month} {start_day} 2024 tour 3 to csv {strand}_IV_T3_{month}-{start_day}
+Report MDS res {month} {start_day} 2024 tour 1 to csv {strand}_MDS_Report_T1_{new_month}-{start_day}
+Report MDS res {month} {start_day} 2024 tour 2 to csv {strand}_MDS_Report_T2_{month}-{start_day}
+Report MDS res {month} {start_day} 2024 tour 3 to csv {strand}_MDS_Report_T3_{month}-{start_day}
+rep vol long from {month} {start_day} 07:00 until {new_month} {end_day} 06:59 to csv {strand}_vol_{month}-{start_day}
+rep mail C-072 from {month} {start_day} 07:00 until {new_month} {end_day} 06:59 to fil {strand}_C-072_{month}-{start_day}
+rep mds res from {month} {start_day} 07:00 until {new_month} {end_day} 06:59 to csv {strand}_MDS_Report_{month}-{start_day}
+rep mail PR-098-OReject from {month} {start_day} 07:00 until {new_month} {end_day} 06:59 to fil {strand}_PR-098-Oreject_{month}-{start_day}
